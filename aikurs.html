@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs o sztucznej inteligencji</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #1abc9c; /* Kolor związany z AI */
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            background-color: #16a085; /* Ciemniejszy odcień */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #149174;
+        }
+        .about-section {
+            padding: 50px;
+            background-color: white;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .tricks-section {
+            padding: 50px;
+            background-color: #ecf0f1; /* Jasny kolor tła */
+            text-align: center;
+        }
+        .tricks-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .tricks-section p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .tricks-section img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        /* Style for the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        .form-group input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Unlock the Future with AI Mastery</h1>
+        <p>Zostań ekspertem w sztucznej inteligencji i zmień swoją karierę! Kurs prowadzony przez specjalistę w dziedzinie AI, krok po kroku.</p>
+        <button id="cta-button" class="cta-button">Zapisz się teraz!</button>
+    </div>
+
+    <div class="about-section">
+        <h2>O mnie</h2>
+        <p>Jestem specjalistą w dziedzinie sztucznej inteligencji z wieloletnim doświadczeniem w tworzeniu rozwiązań AI. Podzielę się z Tobą praktyczną wiedzą, dzięki której szybko wdrożysz sztuczną inteligencję w swoich projektach!</p>
+    </div>
+
+    <div class="tricks-section">
+        <h2>Ciekawe triki, które poznasz na kursie!</h2>
+        <p>Na kursie nauczysz się, jak stworzyć własnego chatbota AI, który potrafi rozmawiać jak człowiek! To umiejętność, która nie tylko ułatwi życie, ale również wyróżni Cię na rynku pracy.</p>
+        <img src="https://via.placeholder.com/600x400.png?text=Tworzenie+Chatbota+AI" alt="Tworzenie Chatbota AI">
+        <p>Ten prosty projekt pokaże Ci, jak używać narzędzi AI, aby stworzyć interaktywną aplikację. To nie tylko zabawa, ale i doskonała okazja, aby poznać
